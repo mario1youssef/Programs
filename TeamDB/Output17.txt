@@ -1,0 +1,149 @@
+Welcome to the Sports Teams Database Manager!
+
+Select from the following options:
+1. View team standings
+2. View the schedule
+3. Add a team
+4. Add a game to the schedule
+5. Enter game scores
+6. Begin a new season
+0. Exit the program
+6
+Reinitializing database for a new season
+
+Select from the following options:
+1. View team standings
+2. View the schedule
+3. Add a team
+4. Add a game to the schedule
+5. Enter game scores
+6. Begin a new season
+0. Exit the program
+1
+Team Name              Win       Lose        Tie
+Astros                   0          0          0
+Marlins                  0          0          0
+Brewers                  0          0          0
+Cubs                     0          0          0
+
+Select from the following options:
+1. View team standings
+2. View the schedule
+3. Add a team
+4. Add a game to the schedule
+5. Enter game scores
+6. Begin a new season
+0. Exit the program
+2
+List of games and scores:
+GameID Home                  Score     Visitor               Score
+1      Astros                    0	Brewers                   0
+2      Brewers                   0	Cubs                      0
+3      Cubs                      0	Astros                    0
+
+Select from the following options:
+1. View team standings
+2. View the schedule
+3. Add a team
+4. Add a game to the schedule
+5. Enter game scores
+6. Begin a new season
+0. Exit the program
+3
+Enter the team name: 
+Braves
+Do you want to enter another team: n
+
+Select from the following options:
+1. View team standings
+2. View the schedule
+3. Add a team
+4. Add a game to the schedule
+5. Enter game scores
+6. Begin a new season
+0. Exit the program
+1
+Team Name              Win       Lose        Tie
+Astros                   0          0          0
+Marlins                  0          0          0
+Brewers                  0          0          0
+Cubs                     0          0          0
+Braves                   0          0          0
+
+Select from the following options:
+1. View team standings
+2. View the schedule
+3. Add a team
+4. Add a game to the schedule
+5. Enter game scores
+6. Begin a new season
+0. Exit the program
+5
+List of games and scores:
+GameID Home                  Score     Visitor               Score
+1      Astros                    0	Brewers                   0
+2      Brewers                   0	Cubs                      0
+3      Cubs                      0	Astros                    0
+Enter the game ID: 1
+Enter the score for the Astros         5
+Enter the score for the Brewers        3
+Do you want to enter another game: y
+List of games and scores:
+GameID Home                  Score     Visitor               Score
+2      Brewers                   0	Cubs                      0
+3      Cubs                      0	Astros                    0
+1      Astros                    5	Brewers                   3
+Enter the game ID: 2
+Enter the score for the Brewers        4
+Enter the score for the Cubs           4
+Do you want to enter another game: y
+List of games and scores:
+GameID Home                  Score     Visitor               Score
+3      Cubs                      0	Astros                    0
+1      Astros                    5	Brewers                   3
+2      Brewers                   4	Cubs                      4
+Enter the game ID: 3
+Enter the score for the Cubs           1
+Enter the score for the Astros         6
+Do you want to enter another game: n
+
+Select from the following options:
+1. View team standings
+2. View the schedule
+3. Add a team
+4. Add a game to the schedule
+5. Enter game scores
+6. Begin a new season
+0. Exit the program
+1
+Team Name              Win       Lose        Tie
+Marlins                  0          0          0
+Braves                   0          0          0
+Brewers                  0          1          1
+Cubs                     0          1          1
+Astros                   2          0          0
+
+Select from the following options:
+1. View team standings
+2. View the schedule
+3. Add a team
+4. Add a game to the schedule
+5. Enter game scores
+6. Begin a new season
+0. Exit the program
+2
+List of games and scores:
+GameID Home                  Score     Visitor               Score
+1      Astros                    5	Brewers                   3
+2      Brewers                   4	Cubs                      4
+3      Cubs                      1	Astros                    6
+
+Select from the following options:
+1. View team standings
+2. View the schedule
+3. Add a team
+4. Add a game to the schedule
+5. Enter game scores
+6. Begin a new season
+0. Exit the program
+0
