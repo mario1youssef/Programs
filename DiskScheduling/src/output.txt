@@ -1,0 +1,113 @@
+Enter initial head position
+2500
+First Come First Serve:
+Move head from 2500 to 568 with seek 1932
+Move head from 568 to 2045 with seek 1477
+Move head from 2045 to 4915 with seek 2870
+Move head from 4915 to 3703 with seek 1212
+Move head from 3703 to 2777 with seek 926
+Move head from 2777 to 3544 with seek 767
+Move head from 3544 to 4710 with seek 1166
+Move head from 4710 to 3559 with seek 1151
+Move head from 3559 to 2885 with seek 674
+Move head from 2885 to 806 with seek 2079
+Move head from 806 to 71 with seek 735
+Move head from 71 to 2924 with seek 2853
+Move head from 2924 to 925 with seek 1999
+Move head from 925 to 2465 with seek 1540
+Move head from 2465 to 3987 with seek 1522
+Move head from 3987 to 3570 with seek 417
+Move head from 3570 to 2812 with seek 758
+Move head from 2812 to 4721 with seek 1909
+Move head from 4721 to 3914 with seek 807
+Move head from 3914 to 1788 with seek 2126
+Move head from 1788 to 4661 with seek 2873
+Move head from 4661 to 900 with seek 3761
+Move head from 900 to 2279 with seek 1379
+Move head from 2279 to 1185 with seek 1094
+Move head from 1185 to 1529 with seek 344
+Move head from 1529 to 2997 with seek 1468
+Move head from 2997 to 4292 with seek 1295
+Move head from 4292 to 2030 with seek 2262
+Move head from 2030 to 4265 with seek 2235
+Move head from 4265 to 29 with seek 4236
+Move head from 29 to 1306 with seek 1277
+Move head from 1306 to 3749 with seek 2443
+Move head from 3749 to 412 with seek 3337
+Move head from 412 to 1599 with seek 1187
+Move head from 1599 to 314 with seek 1285
+Move head from 314 to 3259 with seek 2945
+Move head from 3259 to 2437 with seek 822
+Move head from 2437 to 1205 with seek 1232
+Move head from 1205 to 1291 with seek 86
+Move head from 1291 to 999 with seek 292
+Move head from 999 to 4717 with seek 3718
+Move head from 4717 to 3585 with seek 1132
+Move head from 3585 to 3256 with seek 329
+Move head from 3256 to 3349 with seek 93
+Move head from 3349 to 4344 with seek 995
+Move head from 4344 to 4062 with seek 282
+Move head from 4062 to 1725 with seek 2337
+Move head from 1725 to 323 with seek 1402
+Move head from 323 to 526 with seek 203
+Move head from 526 to 540 with seek 14
+Total seek time with FCFS is 75278
+
+
+C-LOOK:
+Farthest space to the right is: 4915, farthest space to the left is: 29
+Total seek time with C-LOOk is 7301
+
+
+Shortest Seek Time First:
+Move head from 2500 to 2465 with seek 35
+Move head from 2465 to 2437 with seek 28
+Move head from 2437 to 2279 with seek 158
+Move head from 2279 to 2045 with seek 234
+Move head from 2045 to 2030 with seek 15
+Move head from 2030 to 1788 with seek 242
+Move head from 1788 to 1725 with seek 63
+Move head from 1725 to 1599 with seek 126
+Move head from 1599 to 1529 with seek 70
+Move head from 1529 to 1306 with seek 223
+Move head from 1306 to 1291 with seek 15
+Move head from 1291 to 1205 with seek 86
+Move head from 1205 to 1185 with seek 20
+Move head from 1185 to 999 with seek 186
+Move head from 999 to 925 with seek 74
+Move head from 925 to 900 with seek 25
+Move head from 900 to 806 with seek 94
+Move head from 806 to 568 with seek 238
+Move head from 568 to 540 with seek 28
+Move head from 540 to 526 with seek 14
+Move head from 526 to 412 with seek 114
+Move head from 412 to 323 with seek 89
+Move head from 323 to 314 with seek 9
+Move head from 314 to 71 with seek 243
+Move head from 71 to 29 with seek 42
+Move head from 29 to 2777 with seek 2748
+Move head from 2777 to 2812 with seek 35
+Move head from 2812 to 2885 with seek 73
+Move head from 2885 to 2924 with seek 39
+Move head from 2924 to 2997 with seek 73
+Move head from 2997 to 3256 with seek 259
+Move head from 3256 to 3259 with seek 3
+Move head from 3259 to 3349 with seek 90
+Move head from 3349 to 3544 with seek 195
+Move head from 3544 to 3559 with seek 15
+Move head from 3559 to 3570 with seek 11
+Move head from 3570 to 3585 with seek 15
+Move head from 3585 to 3703 with seek 118
+Move head from 3703 to 3749 with seek 46
+Move head from 3749 to 3914 with seek 165
+Move head from 3914 to 3987 with seek 73
+Move head from 3987 to 4062 with seek 75
+Move head from 4062 to 4265 with seek 203
+Move head from 4265 to 4292 with seek 27
+Move head from 4292 to 4344 with seek 52
+Move head from 4344 to 4661 with seek 317
+Move head from 4661 to 4710 with seek 49
+Move head from 4710 to 4717 with seek 7
+Move head from 4717 to 4721 with seek 4
+Move head from 4721 to 4915 with seek 194
+Total seek time with SSTF is 7357
