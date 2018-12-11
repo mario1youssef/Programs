@@ -28,16 +28,16 @@ public class Registrar
 	                  conn.close();
 	                  break;
 	               case '1':
-	                  //viewStudent(conn);
+	                  viewStudent(conn);
 	                  break;
 	               case '2':
-	                  //viewSchedule(conn);
+	                  viewSchedule(conn);
 	                  break;
 	               case '3':
-	                  //viewTuition(conn);
+	                  viewTuition(conn);
 	                  break;
 	               case '4':
-	                  //viewCourses(conn);
+	                  viewCourses(conn);
 	                  break;
 	               case '5':
 		              addStudent(conn);
@@ -341,7 +341,7 @@ public class Registrar
 		   		stmt.executeUpdate("INSERT INTO Student " 
 	                + "(EMPLID, FirstName,"
 	                + "LastName, Email, Phone, Address)"
-	                + "VALUES ('" + emplid + "', ''" 
+	                + "VALUES ('" + emplid + "', '" 
 	                + studentFirstName + "', '" 
 	                + studentlastName + "', '" + email + "','"
 	                + phone + "', '" + address + "')");
@@ -521,4 +521,181 @@ public class Registrar
 	    keyboard.close();
 
 	}
+	/**
+    The viewStudent method displays a table listing the
+    students names.
+    @param conn A connection to the database.
+ */
+
+	public static void viewStudent(Connection conn)
+	 {
+	    try
+	    {
+	       // Create a Statement object
+	       Statement stmt = conn.createStatement();
+	
+	       // Send the statement to the DBMS
+	       ResultSet result = stmt.executeQuery("SELECT * " +
+	                                            "FROM " +
+	                                            "Student");
+	
+	       System.out.printf("%-15s %10s %10s %10s %10s %25s\n",
+	                         "Emplid", "First name", "Last name",
+	                         "Email","Phone Number"," Address");
+	
+	       // Display the contents of the result set
+	       // The result set will have 6 columns
+	       while(result.next())
+	       {
+	          System.out.printf("%-15s %10d %10d %10d %10d %10d\n",
+	                            result.getString("Emplid"),
+	                            result.getString("firstname"),
+	                            result.getString("lastname"),
+	                            result.getString("Email"),
+                                result.getString("Phone"),
+                                result.getString("Address"));
+           }
+	    }
+	
+	    catch(Exception ex)
+	    {
+	       System.out.println("ERROR: " + ex.getMessage());
+	    }
+	 }
+
+ /**
+    The viewSchedule retrieves schedule from students.
+    @param conn A connection to the database.
+ */
+
+	public static void viewSchedule(Connection conn)
+	 {
+	    try
+	    {
+	       // Create a Statement object
+	       Statement stmt = conn.createStatement();
+           Scanner keyboard = new Scanner (System.in);
+           String emplid;
+	       // ADD LINES FOR TASK #2 HERE
+	       // Create a string with a SELECT statement
+	       // Send the statement to the DBMS
+           System.out.println("Enter the Students Emplid #");
+           emplid = keyboard.nextLine();
+	       String sqlStatement = "SELECT * FROM schedule Where emplid = '"+ emplid + "'";
+	       ResultSet result = stmt.executeQuery(sqlStatement);
+	
+	
+	       // This is a suggested column headings display
+	       System.out.println("The student's schedule");
+	       System.out.printf("%-6s %-20s %6s     " +
+	                         "%-20s %6s\n",
+	                         "emplid", "courseoneid", "coursetwoid",
+	                         "coursethreeid", "coursefourid");
+	
+	       // ADD LINES FOR TASK #2 HERE
+	       // Use a while loop to display the result set
+	       // The result set will have five columns
+	       while(result.next())
+	       {
+	          System.out.printf("%-6s %-20s %6s	%-20s %6s\n",
+	                            result.getString("emplid"),
+	                            result.getString("courseoneid"),
+	                            result.getString("coursetwoid"),
+	                            result.getString("coursethreeid"),
+	                            result.getString("coursefourid"));
+	       }
+	    }
+	    catch(Exception ex)
+	    {
+	       System.out.println("ERROR: " + ex.getMessage());
+	    }
+	 }/*
+
+/**
+The viewTuition method retrieves and displays the
+tuition costs for the student.
+@param conn A connection to the database.
+*/
+            
+        public static void viewTuition(Connection conn)
+        {
+            try
+            {
+                // Create a Statement object
+                Statement stmt = conn.createStatement();
+                    
+                // ADD LINES FOR TASK #2 HERE
+                // Create a string with a SELECT statement
+                // Send the statement to the DBMS
+                String sqlStatement = "SELECT * FROM tuition";
+                ResultSet result = stmt.executeQuery(sqlStatement);
+                    
+                    
+                // This is a suggested column headings display
+                System.out.println("List of student tuition info:");
+                System.out.printf("%-6s %-20s %6s     " +
+                                    "%-20s\n",
+                                    "Emplid", "Tuition Paid", "Tuition Owed",
+                                    "Recieves Aid");
+                    
+                // ADD LINES FOR TASK #2 HERE
+                // Use a while loop to display the result set
+                // The result set will have five columns
+                while(result.next())
+                {
+                    System.out.printf("%-6s %-20s %6s	%20s\n",
+                                        result.getString("Emplid"),
+                                        result.getDouble("TuitionPaid"),
+                                        result.getDouble("TuitionOwed"),
+                                        result.getString("receivesaid"));
+                }
+            }
+            catch(Exception ex)
+            {
+                System.out.println("ERROR: " + ex.getMessage());
+            }
+        }/*
+
+}
+/**
+The viewTuition method retrieves and displays the
+tuition costs for the student.
+@param conn A connection to the database.
+*/
+            
+        public static void viewCourses(Connection conn)
+        {
+            try
+            {
+                // Create a Statement object
+                Statement stmt = conn.createStatement();
+                    
+                // ADD LINES FOR TASK #2 HERE
+                // Create a string with a SELECT statement
+                // Send the statement to the DBMS
+                String sqlStatement = "SELECT * FROM courses";
+                ResultSet result = stmt.executeQuery(sqlStatement);
+                    
+                    
+                // This is a suggested column headings display
+                System.out.println("List of available courses:");
+                System.out.printf("%-6s %-20s %6s\n",
+                                    "Course ID", "Instructor", "Department");
+                    
+                // ADD LINES FOR TASK #2 HERE
+                // Use a while loop to display the result set
+                // The result set will have five columns
+                while(result.next())
+                {
+                    System.out.printf("%-6s %20s %6s\n",
+                                        result.getInt("CourseID"),
+                                        result.getString("Instructor"),
+                                        result.getString("Department"));
+                }
+            }
+            catch(Exception ex)
+            {
+                System.out.println("ERROR: " + ex.getMessage());
+            }
+        }
 }
